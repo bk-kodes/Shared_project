@@ -269,8 +269,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e7e47e4f2d62434ca96e9abeea7dadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
-  offset: {x: 0, y: 0, z: 0}
   player: {fileID: 1001872999}
+  distance: 8
+  height: 5
+  mouseSensitivity: 180
+  minPitch: -20
+  maxPitch: 60
 --- !u!1 &333176364
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,7 +453,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9452ae1262a74094f8a68013fbcd1834, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -829,6 +833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   rb: {fileID: 0}
   speed: 10
+  mainCamera: {fileID: 0}
 --- !u!114 &1001873006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -841,8 +846,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e7e47e4f2d62434ca96e9abeea7dadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  offset: {x: 0, y: 0, z: 0}
   player: {fileID: 0}
+  distance: 8
+  height: 5
+  mouseSensitivity: 180
+  minPitch: -20
+  maxPitch: 60
 --- !u!114 &1001873007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,8 +864,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e7e47e4f2d62434ca96e9abeea7dadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  offset: {x: 0, y: 0, z: 0}
   player: {fileID: 0}
+  distance: 8
+  height: 5
+  mouseSensitivity: 180
+  minPitch: -20
+  maxPitch: 60
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
